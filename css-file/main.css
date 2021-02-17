@@ -2,9 +2,12 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #EDE6DF;
+    
 }
 
 header{
+    
     padding: 5px;
     margin: 0;
     background-color: darkgray;
@@ -36,11 +39,20 @@ header h1{
     padding: 10px;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
 .column{
     position: relative;
     width: 80%;
     height: 300px;
-    margin: 240px auto;
+    margin-top: 100px;
+    
 }
 
 .column .row{
@@ -51,6 +63,8 @@ header h1{
     float: left;
     margin: 1%;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+
 }
 
 .icon{
@@ -65,19 +79,80 @@ header h1{
     bottom: 0%;
     width: 100%;
     height: 100%;
-    background-color: pink;
+    background-color: #C0ECCC;
     border-radius: 10px;
 }
 
 .row:hover .icon{
     width: 100%;
-    height : 100px;
+    height : 60px;
     transition: 1s;
 }
 
 .des {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    margin-left: 15%;
+    margin-right: 15%; 
+    margin-top: 5%;
 }
+
+.des p{
+    text-align: justify;
+    letter-spacing: 0.5mm;
+}
+
+.des a{
+    text-decoration: underline;
+    color: #6CB2D1;
+}
+
+.des a:hover{
+    transition: 0.5s;
+    font-size: 30px;
+    color: #4F9EC4;
+    text-decoration: solid;
+}
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 0;
+}
+
+.question{
+    width: 200px;
+}
+
+.answer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.5mm;
+    text-align: justify;
+    width: 600px;
+}
+
+.answer a{
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: none;
+    color: #6CB2D1;
+
+
+}
+.answer a:hover{
+    color: #4F9EC4;
+    transition: 0.5s;
+    font-size: 30px;
+    text-decoration: solid;
+
+}
+
+
